@@ -19,3 +19,20 @@ final case class Project (
   @(ApiModelProperty @field) (position=3, value="version") version: String,
   @(ApiModelProperty @field) (position=4, value="name") name: String) {
 }
+
+object Project {
+
+  val SELF = "Project"
+
+  sealed abstract class Attribute(
+    val name         : String,
+    val json         : String){
+      override def toString = name + " -> " + json
+  }
+
+  // Attributes
+  case object VERSION_IDENTIFIER extends Attribute("versionId", "id")
+  case object PROJECT_IDENTIFIER extends Attribute("projectId", "projectId")
+  case object VERSION extends Attribute("version", "version")
+  case object NAME extends Attribute("name", "name")
+}
