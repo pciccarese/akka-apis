@@ -4,8 +4,7 @@ import io.swagger.annotations._
 
 import scala.annotation.meta.field
 
-/**
-  * The Dataset: a collection of files that are normally considered as a unit.
+/** The Dataset: a collection of files that are normally considered as a unit.
   * @param versionId  The identifier of a specific dataset descriptor version within the lineage
   * @param datasetId  The dataset descriptor identifier across the whole lineage
   * @param version    The version number of a specific dataset descriptor version within the lineage

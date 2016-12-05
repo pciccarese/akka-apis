@@ -4,8 +4,7 @@ import io.swagger.annotations._
 
 import scala.annotation.meta.field
 
-/**
-  * The Project: an endeavor, frequently collaborative, that occurs over a finite period of time and is intended to
+/** The Project: an endeavor, frequently collaborative, that occurs over a finite period of time and is intended to
   * achieve a particular aim. A project consists of metadata and zero or more datasets.
   * @param projectId  The project descriptor identifier across the whole lineage
   * @param versionId  The identifier of a specific project descriptor version within the lineage
