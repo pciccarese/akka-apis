@@ -1,7 +1,6 @@
 package com.perkinelmer.signals.project.model
 
 import io.swagger.annotations._
-
 import scala.annotation.meta.field
 
 /** The Project: an endeavor, frequently collaborative, that occurs over a finite period of time and is intended to
@@ -19,7 +18,7 @@ final case class Project (
   @(ApiModelProperty @field) (position=4, value="name") name: String) {
 }
 
-object Project {
+object ProjectConst {
 
   val SELF = "Project"
 

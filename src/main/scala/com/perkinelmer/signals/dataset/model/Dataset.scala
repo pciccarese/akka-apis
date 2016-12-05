@@ -1,7 +1,6 @@
 package com.perkinelmer.signals.dataset.model
 
 import io.swagger.annotations._
-
 import scala.annotation.meta.field
 
 /** The Dataset: a collection of files that are normally considered as a unit.
@@ -18,7 +17,7 @@ final case class Dataset(
   @(ApiModelProperty @field) (position=4, value="name") name: String) {
 }
 
-object Dataset {
+object DatasetConst {
 
   val SELF = "Dataset"
 
